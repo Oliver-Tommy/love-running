@@ -33,12 +33,11 @@ h1, h2, h3 {
 /* Header */
 header {
     background-color: #FFFFFF;
-    padding-left: 0 1rem;
+    padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
-    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -104,10 +103,6 @@ main {
     position: relative;
 }
 
-#cover-text > h2, #cover-text > h3 {
-    color: #FFFFFF
-}
-
 #cover-text {
     /* Final rgba value (semi-transparent) */
     background-color: rgba(241, 109, 107, .7);
@@ -118,6 +113,10 @@ main {
     min-height: 200px;
     padding-top: 40px;
     padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #FFFFFF
 }
 
 /* Reasons section */
@@ -190,10 +189,10 @@ main {
 /* Footer */
 #social-networks {
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
-    list-style: none;
+    list-style-type: none;
 }
 
 #social-networks i {
@@ -246,7 +245,7 @@ main {
     }
 
     /* Reasons section */
-    #benetfits-physical,
+    #benefits-physical,
     #benefits-mental {
         display: flex;
         flex-direction: column;
